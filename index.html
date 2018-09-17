@@ -9,277 +9,294 @@
     <title>Sudoku</title>
   </head>
   <body>
-    <h1>Sudoku</h1>
+    <h2>Sudoku</h2>
 
 <!-- Sudoku table with seperate boxes -->
-<table class="Sudoku_box" "col-sm-4 col-md-12">
-  <tr>
-    <td class="TopBox1">
-      <table class="minibox">
-      <tr>
-        <td id="InnerBox"> <input type="text" value="" class="UserInput">
-        </td>
-        <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-        </td>
-        <td class="" id="InnerBox">5
-        </td>
-      </tr>
-      <tr>
-        <td class="" id="InnerBox">8
-        </td>
-        <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-        </td>
-        <td class="" id="InnerBox">7
-        </td>
-      </tr>
-      <tr>
-        <td class="" id="InnerBox">6
-        </td>
-        <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-        </td>
-        <td class="" id="InnerBox">4
-        </td>
-      </tr>
-      </table>
-    </td>
+      <table class="Sudoku_box" "col-sm-4 col-md-12">
+         <tr>
+          <td class="TopBox1">
+            <table class="minibox">
+            <tr>
+              <td class="row1 col1 box1" id="InnerBox"> <input type="text" value="" class="UserInput">
+              </td>
+              <td class="row1 col2 box1" id="InnerBox"> <input type="text" value="" class="UserInput">
+              </td>
+              <td class="row1 col3 box1" id="InnerBox">5
+              </td>
+            </tr>
+            <tr>
+              <td class="row2 col1 box1" id="InnerBox">8
+              </td>
+              <td class="row2 col2 box1" id="InnerBox"> <input type="text" value="" class="UserInput">
+              </td>
+              <td class="row2 col3 box1" id="InnerBox">7
+              </td>
+            </tr>
+            <tr>
+              <td class="row3 col1 box1" id="InnerBox">6
+              </td>
+              <td class="row3 col2 box1" id="InnerBox"> <input type="text" value="" class="UserInput">
+              </td>
+              <td class="row3 col3 box1" id="InnerBox">4
+              </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="TopBox2">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">6
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">9
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">2
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      </table>
-    </td>
+          <td class="TopBox2">
+            <table class="minibox">
+            <tr>
+            <td class="row1 col4 box2" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row1 col5 box2" id="InnerBox">6
+            </td>
+            <td class="row1 col6 box2" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="row2 col4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row2 col5 box2" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row2 col6 box2" id="InnerBox">9
+            </td>
+            </tr>
+            <tr>
+            <td class="row3 col4 box2" id="InnerBox">2
+            </td>
+            <td class="row3 col5 box2" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row3 col6 box2" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="TopBox3">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox">2
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">9
-      </td>
+          <td class="TopBox3">
+            <table class="minibox">
+            <tr>
+            <td class="row1 col7 box3" id="InnerBox">2
+            </td>
+            <td class="row1 col8 box3" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="row1 col9 box3" id="InnerBox">9
+            </td>
+            </tr>
+            <tr>
+            <td class="row2 col7 box3" id="InnerBox">5
+            </td>
+            <td class="row2 col8 box3" id="InnerBox">6
+            </td>
+            <td class="row2 col9 box3" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            </tr>
+            <tr>
+            <td class="row3 col7 box3" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="row3 col8 box3" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="row3 col9 box3" id="InnerBox">3
+            </td>
+            </tr>
+            </table>
+          </td>
       </tr>
-      <tr>
-      <td class="" id="InnerBox">5
-      </td>
-      <td class="" id="InnerBox">6
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">3
-      </td>
-      </tr>
-      </table>
-    </td>
-</tr>
 
-  <tr>
-    <td class="MidBox1">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">1
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">6
-      </td>
-      </tr>
-      </table>
-    </td>
+        <tr>
+          <td class="MidBox1">
+            <table class="minibox">
+            <tr>
+            <td class="row4 col1 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row4 col2 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row4 col3 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col1 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row5 col2 box4" id="InnerBox">1
+            </td>
+            <td class="row5 col3 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col1 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row6 col2 box4" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row6 col3 box4" id="InnerBox">6
+            </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="MidBox2">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">8
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">6
-      </td>
-      <td class="" id="InnerBox">2
-      </td>
-      <td class="" id="InnerBox">5
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">3
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      </tr>
-      </table>
-    </td>
+          <td class="MidBox2">
+            <table class="minibox">
+            <tr>
+            <td class="row4 col4 box5" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="row4 col5 box5" id="InnerBox">8
+            </td>
+            <td class="row4 col6 box5" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col4 box5" id="InnerBox">6
+            </td>
+            <td class="row5 col5 box5" id="InnerBox">2
+            </td>
+            <td class="row5 col6 box5" id="InnerBox">5
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col4 box5" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="row6 col5 box5" id="InnerBox">3
+            </td>
+            <td class="row6 col5 box5" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="MidBox3">
-      <table class="minibox">
-      <tr>
-      <td  class="" id="InnerBox">4
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">8
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      </table>
-    </td>
-  </tr>
+          <td class="MidBox3">
+            <table class="minibox">
+            <tr>
+            <td  class="row4 col7 box6" id="InnerBox">4
+            </td>
+            <td class="row4 col8 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row4 col9 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col7 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row5 col8 box6" id="InnerBox">8
+            </td>
+            <td class="row5 col9 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col7 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row6 col8 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="row6 col8 box6" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
 
-  <tr>
-    <td class="BottomBox1">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox">7
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">5
-      </td>
-      <td class="" id="InnerBox">1
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">3
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">2
-      </td>
-      </tr>
-      </table>
-    </td>
+        <tr>
+          <td class="BottomBox1">
+            <table class="minibox">
+            <tr>
+            <td class="" id="InnerBox">7
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox">5
+            </td>
+            <td class="" id="InnerBox">1
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox">3
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox">2
+            </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="BottomBox2">
-      <table class="minibox">
-      <tr>
-      <td class="" id="InnerBox">2
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">4
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      <td class="" id="InnerBox">9
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
-      </td>
-      </tr>
-      </table>
-    </td>
+          <td class="BottomBox2">
+            <table class="minibox">
+            <tr>
+            <td class="" id="InnerBox">2
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox">4
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            <td class="" id="InnerBox">9
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput1">
+            </td>
+            </tr>
+            </table>
+          </td>
 
-    <td class="BottomBox3">
-      <table class="minibox">
+          <td class="BottomBox3">
+            <table class="minibox">
+            <tr>
+            <td class="" id="InnerBox">1
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox">4
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox">6
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox">2
+            </td>
+            </tr>
+            <tr>
+            <td class="" id="InnerBox">7
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
+            </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table>
       <tr>
-      <td class="" id="InnerBox">1
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">4
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">6
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox">2
-      </td>
-      </tr>
-      <tr>
-      <td class="" id="InnerBox">7
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
-      <td class="" id="InnerBox"> <input type="text" value="" class="UserInput">
-      </td>
+        <td>
+          <!-- Buttons at the bottom of the index page -->
+          <form class="form" action="Intro.html" method="post">
+
+          <input type="submit" value="Home" id="button1" class="Button3">
+          </form>
+        </td>
+        <td>
+          <form class="form" action=score() method="post">
+
+          <input type="submit" value="Score" id="button1" class="Button4">
+        </td>
       </tr>
       </table>
-    </td>
-  </tr>
-</table>
+
 
 
   </body>
