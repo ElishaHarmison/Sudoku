@@ -1,0 +1,41 @@
+/* Header */
+h1 {
+  text-align: center;
+}
+
+
+/* Table */
+.Sudoku_box {
+  border: 2px solid grey;
+  width: 500px;
+  height: 500px;
+  margin-left: 450px;
+}
+
+/* Border for tables */
+.TopBox1, .TopBox2, .TopBox3, .MidBox1, .MidBox2, .MidBox3, .BottomBox1, .BottomBox2, .BottomBox3 {
+  border: 2px solid grey;
+}
+#InnerBox {
+  border: 2px solid grey;
+  width: 54px;
+  height: 50px;
+  text-align: center;
+}
+
+.minibox {
+  margin: 2px 2px;
+}
+.TopBox1, .TopBox3, .MidBox2, .BottomBox1, .BottomBox3 {
+  background-color: lightgrey;
+}
+.UserInput {
+  background-color: lightgrey;
+  width: 50px;
+  height: 50px;
+}
+.UserInput1 {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
