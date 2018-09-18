@@ -100,7 +100,7 @@ h2 {
 .Button3 {
   width:  200px;
   height: 30px;
-  margin-left: 500px;
+  margin-left: 400px;
   margin-top: 30px;
   font-size: 16px;
   border-radius: 15px;
@@ -110,7 +110,6 @@ h2 {
 .Button4 {
   width:  200px;
   height: 30px;
-  margin-right: 500px;
   margin-top: 30px;
   font-size: 16px;
   border-radius: 15px;
@@ -136,4 +135,32 @@ h2 {
   border-radius: 15px;
   box-shadow: 5px 10px 18px #888888;
   outline: none;
+}
+.Button5 {
+  width:  200px;
+  height: 30px;
+  margin-right: 400px;
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: bold;
+}
+.Button5:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  outline: none;
+}
+
+/* Correct colour for input */
+.correct {
+  color: green;
+}
+.wrong {
+  color: red;
 }
