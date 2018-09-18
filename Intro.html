@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <script src="js/app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Sudoku</title>
@@ -15,15 +16,15 @@
         <h1>Sudoku</h1>
       </tr>
       <tr>
-        <form class="form" action="index.html" method="post">
-
 
         <td>
-          <input type="button" value="Information" id="button1" class="Button1" onclick="Information()">
+          <button type="button" name="button" id="infoButton">Infomation</button>
         </td>
 
         <td>
-            <input type="submit" value="Start" id="button1" class="Button2">
+          <button type="button" name="button" id="startButton">
+            <a href="index.html">Start</a>
+          </button>
         </td>
         </form>
       </tr>
