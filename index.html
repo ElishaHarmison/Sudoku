@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -284,10 +285,10 @@
       <table>
         <tr>
           <td>
-            <form class="form" action="Intro.html" method="post">
 
-            <input type="submit" value="Home" id="button3" class="Button3">
-            </form>
+            <button type="button" name="button">
+              <a href="Intro.html">Home</a>
+            </button>
           </td>
           <td>
             <form class="form" action=score() method="post">
@@ -296,10 +297,11 @@
             </form>
           </td>
           <td>
-            <input type="submit" value="Submit" id="button5" class="Button5" onclick="checkInput()">
+
+            <button type="button" name="button" id="submit">Submit</button>
           </td>
-          </tr>
-        </table>
+        </tr>
+      </table>
 
 
 
