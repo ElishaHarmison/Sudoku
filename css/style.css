@@ -1,15 +1,71 @@
+body {
+    background-color: #D8F2EA;
+}
 /* Header */
 h1 {
   text-align: center;
+  margin-top: 350px;
+  font-size: 50px;
+
+}
+
+/* Intro page */
+
+.Button1 {
+  width:  200px;
+  height: 30px;
+  margin-left: 500px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: bold;
+
+}
+.Button2 {
+  width:  200px;
+  height: 30px;
+  margin-right: 500px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: bold;
 }
 
 
+.Button1:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px black;
+  outline: none;
+}
+.Button2:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  outline: none;
+}
+
+/* Index page */
+h2 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Table */
 .Sudoku_box {
   border: 2px solid grey;
   width: 500px;
   height: 500px;
   margin-left: 450px;
+
 }
 
 /* Border for tables */
@@ -38,4 +94,46 @@ h1 {
   background-color: white;
   width: 50px;
   height: 50px;
+}
+
+/* Index page buttons  */
+.Button3 {
+  width:  200px;
+  height: 30px;
+  margin-left: 500px;
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: bold;
+}
+.Button4 {
+  width:  200px;
+  height: 30px;
+  margin-right: 500px;
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  font-weight: bold;
+}
+.Button3:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  outline: none;
+}
+.Button4:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  outline: none;
 }

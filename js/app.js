@@ -2,3 +2,10 @@
 //check the box isnt already full
 //Identify the input per box - is it green or red?
 //if all correct - print back a message
+Information();
+
+function Information() {
+  event.preventDefault();
+  alert("Rules of Sudoku...");
+
+}
