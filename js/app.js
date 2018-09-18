@@ -38,27 +38,16 @@ $(document).ready(function(){
 //create the variable value
 //take the user input and implement them into the array to check if the order is correct
 var value = [];
+Input();
 function Input(){
+  value.push(document.getElementById("#InnerBox"));
 
 
-  value.push(document.getElementsByClassName(".UI1"));
-  value.push(document.getElementsByClassName(".UI2"));
-  value = [ , ,5,8];
-  value.push(document.getElementsByClassName(".UI3"));
-  value = [ , ,5,8, ,7,6];
-  value.push(document.getElementsByClassName(".UI4"));
-  value = [ , ,5,8, ,7,6, ,4];
 
 }
 console.log(value);
 
-// value = [ , ,5,8, ,7,6, ,4];
-// value.splice(0, 1, ".UserInput")
-//
-// function valueFunc(){
-//   value.push("");
-//   $(this).getElementsByClassName(".UserInput").innerHTML = value;
-// }
+
 
 
 
