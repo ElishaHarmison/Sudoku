@@ -11,7 +11,7 @@ h1 {
 
 /* Intro page */
 
-.Button1 {
+.infoButton {
   width:  200px;
   height: 30px;
   margin-left: 500px;
@@ -21,7 +21,7 @@ h1 {
   font-weight: bold;
 
 }
-.Button2 {
+.startButton {
   width:  200px;
   height: 30px;
   margin-right: 500px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 
-.Button1:hover {
+.infoButton:hover {
   background-color: navy;
   color: white;
   width: 200px;
@@ -42,7 +42,7 @@ h1 {
   box-shadow: 5px 10px 18px black;
   outline: none;
 }
-.Button2:hover {
+.startButton:hover {
   background-color: navy;
   color: white;
   width: 200px;
@@ -77,6 +77,7 @@ h2 {
   width: 54px;
   height: 50px;
   text-align: center;
+  
 }
 
 .minibox {
@@ -97,7 +98,7 @@ h2 {
 }
 
 /* Index page buttons  */
-.Button3 {
+.home {
   width:  200px;
   height: 30px;
   margin-left: 400px;
@@ -107,7 +108,7 @@ h2 {
   box-shadow: 5px 10px 18px #888888;
   font-weight: bold;
 }
-.Button4 {
+.score {
   width:  200px;
   height: 30px;
   margin-top: 30px;
@@ -116,7 +117,18 @@ h2 {
   box-shadow: 5px 10px 18px #888888;
   font-weight: bold;
 }
-.Button3:hover {
+.home:hover {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+  outline: none;
+
+}
+.score:hover {
   background-color: navy;
   color: white;
   width: 200px;
@@ -126,17 +138,7 @@ h2 {
   box-shadow: 5px 10px 18px #888888;
   outline: none;
 }
-.Button4:hover {
-  background-color: navy;
-  color: white;
-  width: 200px;
-  height: 30px;
-  font-size: 16px;
-  border-radius: 15px;
-  box-shadow: 5px 10px 18px #888888;
-  outline: none;
-}
-.Button5 {
+.submit {
   width:  200px;
   height: 30px;
   margin-right: 400px;
@@ -146,7 +148,7 @@ h2 {
   box-shadow: 5px 10px 18px #888888;
   font-weight: bold;
 }
-.Button5:hover {
+.submit:hover {
   background-color: navy;
   color: white;
   width: 200px;
