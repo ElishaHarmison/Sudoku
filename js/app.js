@@ -4,6 +4,7 @@
 //if all correct - print back a message
 $(document).ready(function(){
 
+
   //take the id of infobutton and when clicked run the information function
   $("#infoButton").click(Information);
   $("#submit").click(readUserInput);
@@ -14,8 +15,8 @@ $(document).ready(function(){
   //Inform the user of the rules
   function Information() {
     // event.preventDefault();
-    alert("Rules of Sudoku.. In order for you to win this game you must fill in all the squares. The purpose of this game is to fill each box with the numbers 1-9. HOWEVER, they must not repeat within the box, nor the same row or column....");
-    alert("This means that each row and column must also have the numbers 1-9 without being repeated. It works out that when each box is complete, each line also fills the pattern.");
+    alert("Rules of Sudoku... In order for you to win this game you must fill in all of the blank squares. The purpose of this game is to fill each box with numbers between 1-9. HOWEVER, they must not repeat within the box, the same row or column...");
+    alert("This means that each box and corresponding row & column must also have the numbers 1-9 without being repeated. It works out that when each box is complete, each line also fills the pattern.");
     alert("You must NOT repeat numbers");
     alert("Ready to start?");
 
@@ -47,6 +48,7 @@ $(document).ready(function(){
     $(".UserInput").focusout(function(event){
       value.push($(this).val());
       console.log(value);
+      console.log($(".submit").html());
     });
   }
 
@@ -202,7 +204,12 @@ $(document).ready(function(){
     //   }
     // };
 
-
+// function win(){
+//   run this winning function after the scores are checked
+//   if user wins {
+//     alert("WOOOOO congrats m8");
+//   }
+// }
 });
 
 

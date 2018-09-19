@@ -1,16 +1,20 @@
+/* Style the body of the index page */
 body {
-    background-color: #D8F2EA;
+    background-color: #F5F5EA;
 }
-/* Header */
+/* Style the sudoku body*/
+.Body {
+  background-color: #F5F5EA;
+}
+/* Style and align Header */
 h1 {
   text-align: center;
   margin-top: 350px;
   font-size: 50px;
-
 }
 
-/* Intro page */
-
+/* Index page */
+/* Style and layout the buttons */
 .infoButton {
   width:  200px;
   height: 30px;
@@ -31,7 +35,7 @@ h1 {
   font-weight: bold;
 }
 
-
+/* change style on hover*/
 .infoButton:hover {
   background-color: navy;
   color: white;
@@ -53,13 +57,13 @@ h1 {
   outline: none;
 }
 
-/* Index page */
+/* Sudoku page */
 h2 {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* Table */
+/* Style the main table */
 .Sudoku_box {
   border: 2px solid grey;
   width: 500px;
@@ -68,30 +72,37 @@ h2 {
 
 }
 
-/* Border for tables */
+/* Border for tables  - same for each*/
 .TopBox1, .TopBox2, .TopBox3, .MidBox1, .MidBox2, .MidBox3, .BottomBox1, .BottomBox2, .BottomBox3 {
   border: 2px solid grey;
 }
+/* Make colours of smaller boxes alternate */
 #InnerBox {
   border: 2px solid grey;
   width: 54px;
   height: 50px;
   text-align: center;
-  
+  background-color: lightgrey;
 }
-
+#InnerBox1{
+  border: 2px solid grey;
+  width: 54px;
+  height: 50px;
+  text-align: center;
+  background-color: white;
+}
 .minibox {
   margin: 2px 2px;
 }
 .TopBox1, .TopBox3, .MidBox2, .BottomBox1, .BottomBox3 {
   background-color: lightgrey;
 }
-.UserInput {
+.zero, .two, .four, .six, .eight {
   background-color: lightgrey;
   width: 50px;
   height: 50px;
 }
-.UserInput1 {
+.one, .three, .five, .seven {
   background-color: white;
   width: 50px;
   height: 50px;
@@ -136,7 +147,7 @@ h2 {
   font-size: 16px;
   border-radius: 15px;
   box-shadow: 5px 10px 18px #888888;
-  outline: none;
+
 }
 .submit {
   width:  200px;
@@ -156,7 +167,7 @@ h2 {
   font-size: 16px;
   border-radius: 15px;
   box-shadow: 5px 10px 18px #888888;
-  outline: none;
+
 }
 
 /* Correct colour for input */
