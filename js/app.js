@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 //take the id of infobutton and when clicked run the information function
   $("#infoButton").click(Information);
-  // $("#submit").click(checkInput);
+  $("#submit").click(Input);
 
   // Information();
   // checkInput();
@@ -43,12 +43,13 @@ var value = [];
 Input();
 
   function Input(){
-    value.push(document.getElementsByClassName(".UserInput").innerHTML);
+    value.push($(".UserInput").value);
+    console.log(value);
 
 
 
   }
-console.log(value);
+
 
 //FOR LOOPS TO CHECK INSIDE EACH OF THE ARRAYS
 // for (var i = 0; i < solution.length; i++) {
