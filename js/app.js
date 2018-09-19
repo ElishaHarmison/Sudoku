@@ -7,209 +7,49 @@ $(document).ready(function(){
 
   //take the id of infobutton and when clicked run the information function
   $("#infoButton").click(Information);
-  $("#submit").click(readUserInput);
+  $("#submit").click(checkUserInput);
 
   // Information();
   // checkInput();
 
   //Inform the user of the rules
   function Information() {
-    // event.preventDefault();
     alert("Rules of Sudoku... In order for you to win this game you must fill in all of the blank squares. The purpose of this game is to fill each box with numbers between 1-9. HOWEVER, they must not repeat within the box, the same row or column...");
     alert("This means that each box and corresponding row & column must also have the numbers 1-9 without being repeated. It works out that when each box is complete, each line also fills the pattern.");
     alert("You must NOT repeat numbers");
     alert("Ready to start?");
 
   }
-  //Check the input of the userinput
 
-  //run through each box, the correct answer is checked
-  var solution = [[1,3,5,8,2,7,6,9,4],
-                  [8,6,7,3,4,9,5,1,2],
-                  [2,4,9,5,6,1,8,7,3],
-                  [5,7,3,4,1,9,2,8,6],
-                  [9,8,1,6,2,5,7,3,4],
-                  [4,2,6,3,8,7,9,1,5],
-                  [7,6,8,9,5,1,3,4,2],
-                  [2,5,3,4,7,8,1,9,6],
-                  [1,9,4,6,3,2,7,5,8]]
+  var solution = [1,3,2,9,8,7,3,4,5,1,4,1,8,7,5,7,3,4,9,2,8,9,1,7,4,2,6,3,7,9,1,5,6,8,9,4,5,3,7,8,1,6,9,3,5,8];
 
+  checkUserInput();
 
-  // checkInput();
-  //create the variable value
-  //take the user input and implement them into the array to check if the order is correct
+  function checkUserInput(){
+    $(".submit").click(function(event){
+      var userinput = [];
+      var correctanswers = 0;
 
-  //USE THIS IF NOTTTTTTT
-  var value = [];
+      $("input").each(function(){
+        userinput.push($(this).val());
+      });
 
-  readUserInput();
+      for (var i = 0; i < solution.length; i++) {
+        if (solution[i] == userinput[i]) {
+          // console.log(i + " value is correct");
+          correctanswers++;
+        } else {
+          // console.log(i + " value is incorrect");
+        }
+      }
 
-  function readUserInput(){
-    $(".UserInput").focusout(function(event){
-      value.push($(this).val());
-      console.log(value);
-      console.log($(".submit").html());
+      if (correctanswers == (solution.length)) {
+        console.log("well done!!! you win");
+      } else {
+        console.log("OOOPS!! Somethings wrong");
+      }
     });
   }
-
-  //FOR LOOPS TO CHECK INSIDE EACH OF THE ARRAYS
-  //TEST IF VALUE FOR LOOP INPUTS FOR NEXT FOR
-
-  for (var i = 0; i < value.length; i++) {
-    for (var j = 0; j < value[i].length; j++) {
-    }
-  }
-
-  for (var i = 0; i < solution.length; i++) {
-    for (var j = 0; j < solution[i].length; j++){
-      // if (solution[i][j] == value[i][j]) {
-      //   $(this).addClass("correct");
-      // }
-      // else {
-      //   $(this).addClass("wrong");
-      // }
-    }
-  }
-
-
-
-  //OTHER FORM OF CHECKING INPUT
-  // function checkInput(){
-    //   //checking Box1
-    //   if (solution[0][0] == 1) {
-    //     alert("WOOOOO");
-    //   }
-    //   else{
-    //     alert("BOOOOOO");
-    //   }
-    //
-    //   if (solution[0][1] == 3){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][2] == 5){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][3] == 8){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][4] == 2){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][5] == 7){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][6] == 6){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][7] == 9){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[0][8] == 4){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   //Checking Box2
-    //   if (solution[1][0] == 8){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][1] == 6){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][2] == 7){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][3] == 3){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][4] == 4){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][5] == 9){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][6] == 5){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][7] == 1){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    //
-    //   if (solution[1][8] == 2){
-    //     $(this).addClass("correct");
-    //   }
-    //   else {
-    //     $(this).addClass("wrong");
-    //   }
-    // };
-
-// function win(){
-//   run this winning function after the scores are checked
-//   if user wins {
-//     alert("WOOOOO congrats m8");
-//   }
-// }
 });
 
 
