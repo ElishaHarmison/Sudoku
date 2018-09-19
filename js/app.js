@@ -4,9 +4,9 @@
 //if all correct - print back a message
 $(document).ready(function(){
 
-//take the id of infobutton and when clicked run the information function
+  //take the id of infobutton and when clicked run the information function
   $("#infoButton").click(Information);
-  $("#submit").click(Input);
+  $("#submit").click(readUserInput);
 
   // Information();
   // checkInput();
@@ -22,7 +22,7 @@ $(document).ready(function(){
   }
   //Check the input of the userinput
 
-//run through each box, the correct answer is checked
+  //run through each box, the correct answer is checked
   var solution = [[1,3,5,8,2,7,6,9,4],
                   [8,6,7,3,4,9,5,1,2],
                   [2,4,9,5,6,1,8,7,3],
@@ -34,171 +34,175 @@ $(document).ready(function(){
                   [1,9,4,6,3,2,7,5,8]]
 
 
-// checkInput();
-//create the variable value
-//take the user input and implement them into the array to check if the order is correct
+  // checkInput();
+  //create the variable value
+  //take the user input and implement them into the array to check if the order is correct
 
-//USE THIS IF NOTTTTTTT
-var value = [];
-Input();
+  //USE THIS IF NOTTTTTTT
+  var value = [];
 
-  function Input(){
-    value.push($(".UserInput").value);
-    console.log(value);
+  readUserInput();
 
+  function readUserInput(){
+    $(".UserInput").focusout(function(event){
+      value.push($(this).val());
+      console.log(value);
+    });
+  }
 
+  //FOR LOOPS TO CHECK INSIDE EACH OF THE ARRAYS
+  //TEST IF VALUE FOR LOOP INPUTS FOR NEXT FOR
 
+  for (var i = 0; i < value.length; i++) {
+    for (var j = 0; j < value[i].length; j++) {
+    }
+  }
+
+  for (var i = 0; i < solution.length; i++) {
+    for (var j = 0; j < solution[i].length; j++){
+      // if (solution[i][j] == value[i][j]) {
+      //   $(this).addClass("correct");
+      // }
+      // else {
+      //   $(this).addClass("wrong");
+      // }
+    }
   }
 
 
-//FOR LOOPS TO CHECK INSIDE EACH OF THE ARRAYS
-// for (var i = 0; i < solution.length; i++) {
-//   for (var j = 0; j < solution[i].length; i++){
-//     if (solution[i][j] == value[i][j]) {
-//       $(this).style.color = "green";
-//     }
-//     else {
-//       $(this).style.color = "red";
-//     }
-//   }
-//   }
+
+  //OTHER FORM OF CHECKING INPUT
+  // function checkInput(){
+    //   //checking Box1
+    //   if (solution[0][0] == 1) {
+    //     alert("WOOOOO");
+    //   }
+    //   else{
+    //     alert("BOOOOOO");
+    //   }
+    //
+    //   if (solution[0][1] == 3){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][2] == 5){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][3] == 8){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][4] == 2){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][5] == 7){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][6] == 6){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][7] == 9){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[0][8] == 4){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   //Checking Box2
+    //   if (solution[1][0] == 8){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][1] == 6){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][2] == 7){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][3] == 3){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][4] == 4){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][5] == 9){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][6] == 5){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][7] == 1){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    //
+    //   if (solution[1][8] == 2){
+    //     $(this).addClass("correct");
+    //   }
+    //   else {
+    //     $(this).addClass("wrong");
+    //   }
+    // };
 
 
-
-//OTHER FORM OF CHECKING INPUT
-    function checkInput(){
-      //checking Box1
-      if (solution[0][0] == 1) {
-        alert("WOOOOO");
-      }
-      else{
-        alert("BOOOOOO");
-      }
-
-      if (solution[0][1] == 3){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][2] == 5){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][3] == 8){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][4] == 2){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][5] == 7){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][6] == 6){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][7] == 9){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[0][8] == 4){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      //Checking Box2
-      if (solution[1][0] == 8){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][1] == 6){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][2] == 7){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][3] == 3){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][4] == 4){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][5] == 9){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][6] == 5){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][7] == 1){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-      if (solution[1][8] == 2){
-        $(this).addClass("correct");
-      }
-      else {
-        $(this).addClass("wrong");
-      }
-
-
-
-
-};
 });
 
 
