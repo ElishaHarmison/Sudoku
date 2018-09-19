@@ -50,6 +50,8 @@ The purpose of this game is to test your mathematical and problem solving skills
 
 <strong>Features</strong>
 
+
+
 Implementation
 
 
