@@ -11,9 +11,9 @@ Instructions
   An example of how the boxes should look is given below(The lines seperate two boxes):
   
   1 2 3  |  4 5 6
-  
+
   4 5 6  |  7 8 9 
-  
+
   7 8 9  |  1 2 3
   
   As you can see, 
