@@ -1,9 +1,13 @@
 # Sudoku_Game
 Sudoku
 
-How to use
+Instructions
 
 Purpose of the game
 
 Features
+
+Implementation
+
+
 
