@@ -86,6 +86,8 @@ After the submit button has provided the user with their win/lose alert a sound 
 ## Implementation ##
 ---
 This game was created with the use of HTML,CSS, JavaScript and JQuery. In order for this game to be created the layout, difficulty level and information processes needed to be decided and planned out. Below are two images, one is a flowchart that covers the processes the game will undertake and the effects they will have on the results. The other is an initial sketch of how the game would look, which helped with development of the page and grid as there was a basic idea of how it should look and lay on the page prior to creation.
+
+
 ##### Flowchart #####
 
 ![Image of flow](READMEimg/flowchart.png)
@@ -113,5 +115,8 @@ Another issue was to find a way to make the correct answers go green and the inc
 There are other features that would have been added if there were more time, or less time was spent fixing the initial error. The extra features that would have been added, include: 
 
 + Green/Red colour changes
++ Multiple levels - ranging difficulty
++ Timer - how long does it take to complete?
++ Save the users score each time they get it correct
 
-
+These features would be added to the game to enhance the interacitivity and personalisation each game would have.
