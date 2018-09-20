@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Code for linking style and scripting sheets-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -12,10 +13,10 @@
   <body class="Body">
     <h2>Sudoku</h2>
 
-<!-- Sudoku table with seperate boxes -->
+      <!-- Sudoku table with seperate boxes -->
       <table class="Sudoku_box" "col-sm-4 col-md-12">
          <tr>
-<!-- Box is found at the top left with 9 inside -->
+          <!-- Box is found at the top left with 9 inside -->
           <td class="TopBox1">
             <table class="minibox">
             <tr>
@@ -44,7 +45,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the top mid with 9 inside -->
+          <!-- Box is found at the top mid with 9 inside -->
           <td class="TopBox2">
             <table class="minibox">
             <tr>
@@ -73,7 +74,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the top right with 9 inside -->
+          <!-- Box is found at the top right with 9 inside -->
           <td class="TopBox3">
             <table class="minibox">
             <tr>
@@ -103,7 +104,7 @@
             </table>
           </td>
         </tr>
-<!-- Box is found at the mid left with 9 inside -->
+          <!-- Box is found at the mid left with 9 inside -->
         <tr>
           <td class="MidBox1">
             <table class="minibox">
@@ -133,7 +134,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the mid mid with 9 inside -->
+          <!-- Box is found at the mid mid with 9 inside -->
           <td class="MidBox2">
             <table class="minibox">
             <tr>
@@ -162,7 +163,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the mid right with 9 inside -->
+          <!-- Box is found at the mid right with 9 inside -->
           <td class="MidBox3">
             <table class="minibox">
             <tr>
@@ -192,7 +193,7 @@
             </table>
           </td>
         </tr>
-<!-- Box is found at the bottom left with 9 inside -->
+          <!-- Box is found at the bottom left with 9 inside -->
         <tr>
           <td class="BottomBox1">
             <table class="minibox">
@@ -222,7 +223,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the bottom mid with 9 inside -->
+          <!-- Box is found at the bottom mid with 9 inside -->
           <td class="BottomBox2">
             <table class="minibox">
             <tr>
@@ -251,7 +252,7 @@
             </tr>
             </table>
           </td>
-<!-- Box is found at the bottom right with 9 inside -->
+          <!-- Box is found at the bottom right with 9 inside -->
           <td class="BottomBox3">
             <table class="minibox">
             <tr>
@@ -282,22 +283,19 @@
           </td>
         </tr>
       </table>
-<!-- Buttons at the bottom of the index page -->
+          <!-- Buttons at the bottom of the index page -->
       <table>
         <tr>
           <td>
-<!-- Send the user back to the home screen -->
-            <button type="button" name="button" class="home">
-              <a href="Index.html">Home</a>
-            </button>
+          <!-- Send the user back to the home screen -->
+          <button type="submit" name="button" id="submit" class="submit">Submit</button>
           </td>
+
           <td>
-<!-- ADD A SCORE IN?? -->
-            <button type="button" name="button" id="score" class="score">Score</button>
-          </td>
-          <td>
-<!-- Submit to check te answer  -->
-            <button type="submit" name="button" id="submit" class="submit">Submit</button>
+          <!-- Submit to check te answer  -->
+          <button type="button" name="button" class="home">
+            <a href="Index.html">Home</a>
+          </button>
           </td>
         </tr>
       </table>

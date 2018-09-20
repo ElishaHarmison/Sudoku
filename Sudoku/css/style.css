@@ -109,26 +109,19 @@ h2 {
 }
 
 /* Index page buttons  */
-.home {
+.submit {
   width:  200px;
   height: 30px;
-  margin-left: 400px;
+  margin-left: 500px;
   margin-top: 30px;
   font-size: 16px;
   border-radius: 15px;
   box-shadow: 5px 10px 18px #888888;
   font-weight: bold;
+  color: black;
 }
-.score {
-  width:  200px;
-  height: 30px;
-  margin-top: 30px;
-  font-size: 16px;
-  border-radius: 15px;
-  box-shadow: 5px 10px 18px #888888;
-  font-weight: bold;
-}
-.home:hover {
+
+.submit:hover {
   background-color: navy;
   color: white;
   width: 200px;
@@ -139,7 +132,7 @@ h2 {
   outline: none;
 
 }
-.score:hover {
+.home:hover {
   background-color: navy;
   color: white;
   width: 200px;
@@ -149,25 +142,21 @@ h2 {
   box-shadow: 5px 10px 18px #888888;
 
 }
-.submit {
+.home {
   width:  200px;
   height: 30px;
-  margin-right: 400px;
+  margin-right: 500px;
   margin-top: 30px;
   font-size: 16px;
   border-radius: 15px;
   box-shadow: 5px 10px 18px #888888;
   font-weight: bold;
-}
-.submit:hover {
-  background-color: navy;
-  color: white;
-  width: 200px;
-  height: 30px;
-  font-size: 16px;
-  border-radius: 15px;
-  box-shadow: 5px 10px 18px #888888;
+  color:inherit;
 
+}
+
+a {
+  color:inherit;
 }
 
 /* Correct colour for input */
