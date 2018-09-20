@@ -2,7 +2,7 @@
 
 ## Sudoku ##
 ---
-![Image of Sudoku](READMEimg/game.png)
+![Image of Sudoku](game.png)
 
   Sudoku is a mathematical based game. It requires the user inputting numbers within empty boxes; ensuring each box, row and column correspond. The image above shows the layout and design of the game.
   
@@ -90,11 +90,11 @@ This game was created with the use of HTML, CSS, JavaScript and JQuery. In order
 
 ##### Flowchart #####
 
-![Image of flow](READMEimg/flowchart.png)
+![Image of flow](flowchart.png)
 
 ##### Sketch #####
 
-![Image of sketch](READMEimg/sketch.png)
+![Image of sketch](sketch.png)
 
 ### Issues ###
 ---
