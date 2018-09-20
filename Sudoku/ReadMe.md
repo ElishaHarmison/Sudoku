@@ -106,7 +106,7 @@ Another issue was to find a way to make the correct answers go green and the inc
 
 
 
-  #### How overcome ####
+  #### How they were overcome ####
 
 To overcome the issue of not taking in user input, there were functions and loops implemented into the code to collect all of the users input at the end of the game, check them against a correct array and then output a message for correct/incorrect guesses. This way the user is able to see if they have won without running into issues along the way. 
   
