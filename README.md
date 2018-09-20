@@ -113,3 +113,9 @@ To overcome the issue of not taking in user input, there were functions and loop
 
 There are other features that would have been added if there were more time, or less time was spent fixing the initial error. The extra features that would have been added, include: 
 
++ Green/Red colour changes
++ Multiple levels - ranging in difficulty
++ Timer - how long does it take to complete?
++ Save the users score each time they get it correct
+
+These features would be added to the game to enhance the interacitivity and personalisation each game would have. They would enhance the level of what it provides the user and how much interactivity they are able to gain from it.
