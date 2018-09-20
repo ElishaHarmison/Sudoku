@@ -33,7 +33,7 @@ Once you have the Sudoku_Game folder, all you need to do is open the Index.html 
 
   In order to play Sudoku you need to understand the basics of what the game requires.
   You must place the numbers 1-9 within each box. However, the boxes directly adjacent must not contain numbers in the same rows or columns as the others.
-  An small example of how the boxes should look is given below:
+  A small example of how the boxes should look is given below:
   
   <table>
   <tr>
@@ -73,7 +73,7 @@ Once you have the Sudoku_Game folder, all you need to do is open the Index.html 
 ## Features ##
 ---
 
-This game of Sudoku contains different features in order for it to perform high functionality and providing the user with aspects that make it as realistic to the paper based puzzle as possible. This puzzle contains two main pages, the introduction page and the game itself.
+This game of Sudoku contains different features in order for it to perform with high functionality and providing the user with aspects that make it as realistic to the paper based puzzle as possible. This puzzle contains two main pages, the introduction page and the game itself.
 
 The introduction page contains instructions on how the game is to be played, allowing users who have not previously played Sudoku to understand the basics of how this game is played. Once the user has read and understood the rules they then enter the game by selecting the start button.
 
@@ -85,7 +85,7 @@ After the submit button has provided the user with their win/lose alert a sound 
 
 ## Implementation ##
 ---
-This game was created with the use of HTML,CSS, JavaScript and JQuery. In order for this game to be created the layout, difficulty level and information processes needed to be decided and planned out. Below are two images, one is a flowchart that covers the processes the game will undertake and the effects they will have on the results. The other is an initial sketch of how the game would look, which helped with development of the page and grid as there was a basic idea of how it should look and lay on the page prior to creation.
+This game was created with the use of HTML, CSS, JavaScript and JQuery. In order for this game to be created the layout, difficulty level and information processes needed to be decided and planned out. Below are two images, one is a flowchart that covers the processes the game will undertake and the effects they will have on the results. The other is an initial sketch of how the game would look, which helped with development of the page and grid as there was a basic idea of how it should look and lay on the page prior to creation.
 
 
 ##### Flowchart #####
@@ -100,23 +100,7 @@ This game was created with the use of HTML,CSS, JavaScript and JQuery. In order 
 ---
 Whilst creating this project there were different issues that arose throughout that slowed down the development time at stages as they needed to be fixed. The games pages, grid layout and CSS styling were done initially and set out the layout for the rest of the coding. After this was complete the JavaScript needed to be created to be able to collect the user input and check it to the correct answers of the table and to provide them with a message on completion.
 
-The Main issue throughout this project was creating JavaScript that would take the users input from the input field within the grid. The first step complete allowed me to collect user input but didn't show an output of what the value they had input was. Instead of collecting user input per box and checking them individually, it was found that it would work if all of the users input were collected and checked against the correct answers for all of the missing squares. This was the biggest issue through the project as multiple options were tried and tested but all of them failed until this option worked.
+The Main issue throughout this project was creating JavaScript that would take the users input from the input field within the grid. The first time attempting this allowed me to collect user input but didn't show what the value they had input was. Instead of collecting user input per box and checking them individually, it was found that it would work if all of the users input were collected and checked against the correct answers for all of the missing squares at the same time. This was the biggest issue through the project as multiple options were tried and tested but all of them failed until this option worked.
 
-Another issue was to find a way to make the correct answers go green and the incorrect ones to go red. Each way this was tried it was either changing the colour of the button text, rather than the text on button click; whilst also changing the colour test before being checked - making all the text green.
+Another issue was to find a way to make the correct answers go green and the incorrect ones to go red. Each way this was tried it was either changing the colour of the button text, rather than the text on button click; whilst also changing the colour of the text before being checked - making all the text green.
 
-
-
-  #### How overcome ####
-  ????
-  
-### Future Additions ###
----
-
-There are other features that would have been added if there were more time, or less time was spent fixing the initial error. The extra features that would have been added, include: 
-
-+ Green/Red colour changes
-+ Multiple levels - ranging difficulty
-+ Timer - how long does it take to complete?
-+ Save the users score each time they get it correct
-
-These features would be added to the game to enhance the interacitivity and personalisation each game would have.
