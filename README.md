@@ -2,8 +2,9 @@
 
 ## Sudoku ##
 ---
-![Image of Sudoku](/phonenotes.png)
-  Sudoku is a mathematical based game. It requires the user inputting numbers within empty boxes; ensuring each box, row and column correspond.
+![Image of Sudoku](READMEimg/game.png)
+
+  Sudoku is a mathematical based game. It requires the user inputting numbers within empty boxes; ensuring each box, row and column correspond. The image above shows the layout and design of the game.
   
  ## Purpose of the game ##
 ---
@@ -25,13 +26,14 @@ In order for this game to be run you need ALL the files and a web browser. Withi
   + Win.mp3
   + Fail.mp3
 
-Once you have the Sudoku_Game file, all you need to do is open the Index.html file in your browser.
+Once you have the Sudoku_Game folder, all you need to do is open the Index.html file in your browser.
+
 ## Instructions ##
 ---
 
   In order to play Sudoku you need to understand the basics of what the game requires.
   You must place the numbers 1-9 within each box. However, the boxes directly adjacent must not contain numbers in the same rows or columns as the others.
-  An example of how the boxes should look is given below(The lines seperate two boxes):
+  An small example of how the boxes should look is given below:
   
   <table>
   <tr>
@@ -73,7 +75,7 @@ Once you have the Sudoku_Game file, all you need to do is open the Index.html fi
 
 This game of Sudoku contains different features in order for it to perform high functionality and providing the user with aspects that make it as realistic to the paper based puzzle as possible. This puzzle contains two main pages, the introduction page and the game itself.
 
-The introduction page contains instructions on how the game is to be played, allowing users who have not previously played Sudoku to understand the basics of this game is played. Once the user has read and understood the rules they then enter the game by selecting the start button.
+The introduction page contains instructions on how the game is to be played, allowing users who have not previously played Sudoku to understand the basics of how this game is played. Once the user has read and understood the rules they then enter the game by selecting the start button.
 
 The game page itself provides the user with the 9 x 9 Sudoku grid. Once they have access to the game they are required to fill in the empty boxes with numbers 1-9. Once they have complete all of the boxes the user can then press submit to check their answers. The programme then checks the users input to the saved solution to see if they have chosen the correct input.
 The user is provided with an alert that tells them if they have won or not once they have filled in all the boxes and clicked submit. 
@@ -83,14 +85,33 @@ After the submit button has provided the user with their win/lose alert a sound 
 
 ## Implementation ##
 ---
+This game was created with the use of HTML,CSS, JavaScript and JQuery. In order for this game to be created the layout, difficulty level and information processes needed to be decided and planned out. Below are two images, one is a flowchart that covers the processes the game will undertake and the effects they will have on the results. The other is an initial sketch of how the game would look, which helped with development of the page and grid as there was a basic idea of how it should look and lay on the page prior to creation.
+##### Flowchart #####
+
+![Image of flow](READMEimg/flowchart.png)
+
+##### Sketch #####
+
+![Image of sketch](READMEimg/sketch.png)
 
 ### Issues ###
 ---
+Whilst creating this project there were different issues that arose throughout that slowed down the development time at stages as they needed to be fixed. The games pages, grid layout and CSS styling were done initially and set out the layout for the rest of the coding. After this was complete the JavaScript needed to be created to be able to collect the user input and check it to the correct answers of the table and to provide them with a message on completion.
+
+The Main issue throughout this project was creating JavaScript that would take the users input from the input field within the grid. The first step complete allowed me to collect user input but didn't show an output of what the value they had input was. Instead of collecting user input per box and checking them individually, it was found that it would work if all of the users input were collected and checked against the correct answers for all of the missing squares. This was the biggest issue through the project as multiple options were tried and tested but all of them failed until this option worked.
+
+Another issue was to find a way to make the correct answers go green and the incorrect ones to go red. Each way this was tried it was either changing the colour of the button text, rather than the text on button click; whilst also changing the colour test before being checked - making all the text green.
+
+
 
   #### How overcome ####
-  
+  ????
   
 ### Future Additions ###
 ---
+
+There are other features that would have been added if there were more time, or less time was spent fixing the initial error. The extra features that would have been added, include: 
+
++ Green/Red colour changes
 
 
