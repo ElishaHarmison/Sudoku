@@ -80,7 +80,7 @@ The introduction page contains instructions on how the game is to be played, all
 The game page itself provides the user with the 9 x 9 Sudoku grid. Once they have access to the game they are required to fill in the empty boxes with numbers 1-9. Once they have complete all of the boxes the user can then press submit to check their answers. The programme then checks the users input to the saved solution to see if they have chosen the correct input.
 The user is provided with an alert that tells them if they have won or not once they have filled in all the boxes and clicked submit. 
 
-Once the submit button has been clicked the colours of the boxes will change. The boxes will go green if the user has put the correct number in the box; if the answer is incorrect it will go red.
+Once the submit button is clicked the boxes that have or haven't been filled change colour. If they have filled in the correct answer the box goes green, if they are empty or incorrect they will turn red. This shows the user in what area they need to edit their input.
 
 After the submit button has provided the user with their win/lose alert a sound plays, that corresponds with the message presented to the user. If the player doesn't complete the Sudoku correctly they will be told something is incorrect, which prompts them to try again until they find their error - then presenting the win alert.
 
@@ -105,9 +105,6 @@ Whilst creating this project there were different issues that arose throughout t
 
 The Main issue throughout this project was creating JavaScript that would take the users input from the input field within the grid. The first time attempting this allowed me to collect user input but didn't show what the value they had input was. Instead of collecting user input per box and checking them individually, it was found that it would work if all of the users input were collected and checked against the correct answers for all of the missing squares at the same time. This was the biggest issue through the project as multiple options were tried and tested but all of them failed until this option worked.
 
-Another issue was to find a way to make the correct answers go green and the incorrect ones to go red. Each way this was tried it was either changing the colour of the button text, rather than the text on button click; whilst also changing the colour of the text before being checked - making all the text green.
-
-
 
   #### How they were overcome ####
 
@@ -118,7 +115,6 @@ To overcome the issue of not taking in user input, there were functions and loop
 
 There are other features that would have been added if there were more time, or less time was spent fixing the initial error. The extra features that would have been added, include: 
 
-+ Green/Red colour changes
 + Multiple levels - ranging in difficulty
 + Timer - how long does it take to complete?
 + Save the users score each time they get it correct
