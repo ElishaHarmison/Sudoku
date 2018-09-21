@@ -65,11 +65,11 @@ $(document).ready(function(){
       //if the users input is correct it prints a well done alert as well as plays the audio
       //if they are incorrect it alerts that its wrong, along with a different audio playing.
       if (correctanswers == (solution.length)) {
-        WinSound = new sound("sound/win.mp3");
+        WinSound = new sound("../sound/Win.mp3");
         WinSound.play();
         alert("Well done! You've won!")
       } else {
-        FailSound = new sound("sound/fail.mp3");
+        FailSound = new sound("../sound/fail.mp3");
         FailSound.play();
         alert("Mmmm.. something's not right")
       }
