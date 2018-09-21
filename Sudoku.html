@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Code for linking style and scripting sheets-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Sudoku</title>
+  </head>
+  <body class="Body">
+    <h2>Sudoku</h2>
+
+      <!-- Sudoku table with seperate boxes -->
+      <table class="Sudoku_box" "col-sm-4 col-md-12">
+         <tr>
+          <!-- Box is found at the top left with 9 inside -->
+          <td class="TopBox1">
+            <table class="minibox">
+            <tr>
+              <td class="row1 col1 box1" id="InnerBox" > <input type="text" value="" class="UserInput zero">
+              </td>
+              <td class="row1 col2 box1" id="InnerBox" > <input type="text" value="" class="UserInput zero">
+              </td>
+              <td class="row1 col3 box1 zero" id="InnerBox" >5
+              </td>
+            </tr>
+            <tr>
+              <td class="row2 col1 box1 zero" id="InnerBox">8
+              </td>
+              <td class="row2 col2 box1" id="InnerBox" > <input type="text" value="" class="zero UserInput">
+              </td>
+              <td class="row2 col3 box1 zero " id="InnerBox">7
+              </td>
+            </tr>
+            <tr>
+              <td class="row3 col1 box1 zero" id="InnerBox">6
+              </td>
+              <td class="row3 col2 box1" id="InnerBox" > <input type="text" value="" class="UserInput zero">
+              </td>
+              <td class="row3 col3 box1 zero" id="InnerBox">4
+              </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the top mid with 9 inside -->
+          <td class="TopBox2">
+            <table class="minibox">
+            <tr>
+            <td class="row1 col4 box2" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            <td class="row1 col5 box2 one" id="InnerBox1">6
+            </td>
+            <td class="row1 col6 box2" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            </tr>
+            <tr>
+            <td class="row2 col4" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            <td class="row2 col5 box2" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            <td class="row2 col6 box2 one" id="InnerBox1">9
+            </td>
+            </tr>
+            <tr>
+            <td class="row3 col4 box2 one" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            <td class="row3 col5 box2" id="InnerBox1"> <input type="text" value="" class="UserInput one">
+            </td>
+            <td class="row3 col6 box2" id="InnerBox1">2
+            </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the top right with 9 inside -->
+          <td class="TopBox3">
+            <table class="minibox">
+            <tr>
+            <td class="row1 col7 box3 two" id="InnerBox">2
+            </td>
+            <td class="row1 col8 box3" id="InnerBox"> <input type="text" value="" class="UserInput two">
+            </td>
+            <td class="row1 col9 box3 two" id="InnerBox">9
+            </td>
+            </tr>
+            <tr>
+            <td class="row2 col7 box3 two" id="InnerBox">5
+            </td>
+            <td class="row2 col8 box3 two" id="InnerBox">6
+            </td>
+            <td class="row2 col9 box3" id="InnerBox"> <input type="text" value="" class="UserInput two">
+            </td>
+            </tr>
+            <tr>
+            <td class="row3 col7 box3" id="InnerBox"> <input type="text" value="" class="UserInput two">
+            </td>
+            <td class="row3 col8 box3" id="InnerBox"> <input type="text" value="" class="UserInput two">
+            </td>
+            <td class="row3 col9 box3 two" id="InnerBox">3
+            </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+          <!-- Box is found at the mid left with 9 inside -->
+        <tr>
+          <td class="MidBox1">
+            <table class="minibox">
+            <tr>
+            <td class="row4 col1 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            <td class="row4 col2 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            <td class="row4 col3 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col1 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            <td class="row5 col2 box4 three" id="InnerBox1">1
+            </td>
+            <td class="row5 col3 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col1 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            <td class="row6 col2 box4" id="InnerBox1"> <input type="text" value="" class="UserInput three">
+            </td>
+            <td class="row6 col3 box4 three" id="InnerBox1">6
+            </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the mid mid with 9 inside -->
+          <td class="MidBox2">
+            <table class="minibox">
+            <tr>
+            <td class="row4 col4 box5" id="InnerBox"> <input type="text" value="" class="UserInput four">
+            </td>
+            <td class="row4 col5 box5 four" id="InnerBox">8
+            </td>
+            <td class="row4 col6 box5" id="InnerBox"> <input type="text" value="" class="UserInput four">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col4 box5 four" id="InnerBox">6
+            </td>
+            <td class="row5 col5 box5 four" id="InnerBox">2
+            </td>
+            <td class="row5 col6 box5 four" id="InnerBox">5
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col4 box5" id="InnerBox"> <input type="text" value="" class="UserInput four">
+            </td>
+            <td class="row6 col5 box5 four" id="InnerBox">3
+            </td>
+            <td class="row6 col5 box5" id="InnerBox"> <input type="text" value="" class="UserInput four">
+            </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the mid right with 9 inside -->
+          <td class="MidBox3">
+            <table class="minibox">
+            <tr>
+            <td  class="row4 col7 box6 five" id="InnerBox1">4
+            </td>
+            <td class="row4 col8 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            <td class="row4 col9 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            </tr>
+            <tr>
+            <td class="row5 col7 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            <td class="row5 col8 box6 five" id="InnerBox1">8
+            </td>
+            <td class="row5 col9 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            </tr>
+            <tr>
+            <td class="row6 col7 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            <td class="row6 col8 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            <td class="row6 col8 box6" id="InnerBox1"> <input type="text" value="" class="UserInput five">
+            </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+          <!-- Box is found at the bottom left with 9 inside -->
+        <tr>
+          <td class="BottomBox1">
+            <table class="minibox">
+            <tr>
+            <td class="row7 col1 box7 six" id="InnerBox">7
+            </td>
+            <td class="row7 col2 box7" id="InnerBox"> <input type="text" value="" class="UserInput six">
+            </td>
+            <td class="row7 col3 bo7" id="InnerBox"> <input type="text" value="" class="UserInput six">
+            </td>
+            </tr>
+            <tr>
+            <td class="row8 col1 box7" id="InnerBox"> <input type="text" value="" class="UserInput six">
+            </td>
+            <td class="row8 col2 box7 six" id="InnerBox">5
+            </td>
+            <td class="row8 col3 box7 six" id="InnerBox">1
+            </td>
+            </tr>
+            <tr>
+            <td class="row9 col1 box7 six" id="InnerBox">3
+            </td>
+            <td class="row9 col2 box7" id="InnerBox"> <input type="text" value="" class="UserInput six">
+            </td>
+            <td class="row9 col3 box7 six" id="InnerBox">2
+            </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the bottom mid with 9 inside -->
+          <td class="BottomBox2">
+            <table class="minibox">
+            <tr>
+            <td class="row7 col4 box8 seven" id="InnerBox1">2
+            </td>
+            <td class="row7 col5 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            <td class="row7 col6 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            </tr>
+            <tr>
+            <td class="row8 col4 box8 seven" id="InnerBox1">4
+            </td>
+            <td class="row8 col5 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            <td class="row8 col6 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            </tr>
+            <tr>
+            <td class="row9 col4 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            <td class="row9 col5 box8 seven" id="InnerBox1">9
+            </td>
+            <td class="row9 col6 box8" id="InnerBox1"> <input type="text" value="" class="UserInput seven">
+            </td>
+            </tr>
+            </table>
+          </td>
+          <!-- Box is found at the bottom right with 9 inside -->
+          <td class="BottomBox3">
+            <table class="minibox">
+            <tr>
+            <td class="row7 col7 box9 eight" id="InnerBox">1
+            </td>
+            <td class="row7 col8 box9" id="InnerBox"> <input type="text" value="" class="UserInput eight">
+            </td>
+            <td class="row7 col9 box9 eight" id="InnerBox">4
+            </td>
+            </tr>
+            <tr>
+            <td class="row8 col7 box8 eight" id="InnerBox">6
+            </td>
+            <td class="row8 col8 box9" id="InnerBox"> <input type="text" value="" class="UserInput eight">
+            </td>
+            <td class="row8 col9 box9 eight" id="InnerBox">2
+            </td>
+            </tr>
+            <tr>
+            <td class="row9 col7 box9 eight" id="InnerBox">7
+            </td>
+            <td class="row9 col8 box9" id="InnerBox"> <input type="text" value="" class="UserInput eight">
+            </td>
+            <td class="row9 col9 box9" id="InnerBox"> <input type="text" value="" class="UserInput eight">
+            </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+          <!-- Buttons at the bottom of the index page -->
+      <table>
+        <tr>
+          <td>
+          <!-- Send the user back to the home screen -->
+          <button type="submit" name="button" id="submit" class="submit">Submit</button>
+          </td>
+
+          <td>
+          <!-- Submit to check te answer  -->
+          <button type="submit" name="button" id="homeButton" class="homeButton">
+            <a href="Index.html" class="home">Home</a>
+          </button>
+          </td>
+        </tr>
+      </table>
+
+
+
+  </body>
+</html>
