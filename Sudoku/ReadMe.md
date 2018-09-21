@@ -80,7 +80,10 @@ The introduction page contains instructions on how the game is to be played, all
 The game page itself provides the user with the 9 x 9 Sudoku grid. Once they have access to the game they are required to fill in the empty boxes with numbers 1-9. Once they have complete all of the boxes the user can then press submit to check their answers. The programme then checks the users input to the saved solution to see if they have chosen the correct input.
 The user is provided with an alert that tells them if they have won or not once they have filled in all the boxes and clicked submit. 
 
+Once the submit button has been clicked the colours of the boxes will change. The boxes will go green if the user has put the correct number in the box; if the answer is incorrect it will go red.
+
 After the submit button has provided the user with their win/lose alert a sound plays, that corresponds with the message presented to the user. If the player doesn't complete the Sudoku correctly they will be told something is incorrect, which prompts them to try again until they find their error - then presenting the win alert.
+
 
 
 ## Implementation ##
